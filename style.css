@@ -1,3 +1,11 @@
+img, picture, video
+{
+    max-width: 100%;
+}
+.header
+{
+    padding: 20px;
+}
 .b1{
     font-size: 28px;
     background-color:rgb(245, 240, 230);
@@ -21,7 +29,7 @@
     overflow: hidden;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: white ; 
 }
 #Nav a
@@ -42,6 +50,7 @@
 }
 .d3
 {
+    padding: 20px;
     width: 100%;
     display: inline-block;
     background-color:rgb(245, 240, 230);
@@ -83,4 +92,27 @@
     background-color: #182b49;
     max-height: 500px;
     overflow: scroll;
+}
+@media only screen and (max-width: 800px)
+{
+    #Nav
+    {
+        display: none;
+    }
+    .grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header
+    {
+        max-width: 75%;
+    }
+    #h3
+    {
+        font-size: 24px;
+    }
+    #p
+    {
+        font-size: 20px;
+    }
 }
